@@ -1,5 +1,5 @@
 <div style="margin-top: 5px; width: 100%; border-top:1px dashed #fff;" class="postlove">
-	<!-- IF DISABLE != 1 --><!-- IF !postrow.DISABLE --><a href="{postrow.POST_LIKE_URL}" data-ajax="toggle_love"><!-- ENDIF --><!-- ENDIF --><span class="{postrow.POST_LIKE_CLASS}" id="likeimg_{postrow.POST_ID}"></span><!-- IF !postrow.DISABLE --><!-- IF DISABLE != 1 --></a><!-- ENDIF --><!-- ENDIF -->
-    <span style="font-size: 0.8em; vertical-align: middle;" id="like_{postrow.POST_ID}"><!-- IF postrow.POST_LIKERS_COUNT --> X {postrow.POST_LIKERS_COUNT} | {postrow.POST_LIKERS}<!-- ENDIF -->
+    <!-- IF DISABLE != 1 --><!-- IF !postrow.DISABLE --><a href="{postrow.POST_LIKE_URL}" data-ajax="toggle_love"><!-- ENDIF --><!-- ENDIF --><span class="{postrow.POST_LIKE_CLASS}" id="likeimg_{postrow.POST_ID}"></span><!-- IF !postrow.DISABLE --><!-- IF DISABLE != 1 --></a><!-- ENDIF --><!-- ENDIF --><span style="font-size: 0.8em; vertical-align: middle;"> X </span> 
+    <span style="font-size: 0.8em; vertical-align: middle;" id="like_{postrow.POST_ID}">{postrow.POST_LIKERS_COUNT}<!-- IF postrow.POST_LIKERS_COUNT > 0 --> | {postrow.POST_LIKERS}<!-- ENDIF -->
     </span>  
 </div>
